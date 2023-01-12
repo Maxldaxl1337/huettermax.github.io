@@ -1,0 +1,173 @@
+@import url(./Assets/codingfonts.css);
+
+body {
+    background-color: rgb(17, 20, 24);
+    color: rgb(211, 216, 216);
+    font-family: 'Nanum Gothic Coding';
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+  
+  .main {
+    max-width: 1300px;
+    margin: auto;
+  }
+
+  .name:hover {
+    color: rgb(64, 67, 90);
+  }
+  
+  .row {
+    margin: 8px -16px;
+  }
+  
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  .column {
+    float: left;
+    width: 25%;
+  }    
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .wfodelivery {
+    background-color: white;
+    padding: 10px;
+    transition: 0.3s;
+    /*transition: transform 0.4s;*/
+  }
+
+  .content {
+    background-color: white;
+    padding: 10px;
+    transition: 0.3s;
+    transition: transform 0.2s;
+  }
+
+  .content:hover {
+    background-color: rgb(64, 67, 90);
+    color: white;
+    transform: scale(1.2);
+  }
+
+  @media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+  .insta {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.3s;
+  }
+  
+  .insta:hover {
+    background-color: #da8c34;
+    color: white;
+    cursor: pointer;
+  }
+
+  .github {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.3s;
+  }
+  
+  .github:hover {
+    background-color: #8234da;
+    color: white;
+    cursor: pointer;
+  }
+
+  .wfod {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.3s;
+  }
+  
+  .wfod:hover {
+    background-color: #3476da;
+    color: white;
+  }
+
+  .wfod2 {
+    text-align: left;
+    transition: 0.3s;
+    display: inline-block;
+  }
+
+  .wfod2:hover {
+    color: #3476da; 
+  }
+
+  
+  /* TITLE NAME */
+
+  #title {
+    font-size: 70px;
+  }
+
+  .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+  }
+
+  #firstname {
+    color: rgb(38, 154, 153);
+    font-style: normal;
+  }
+
+  #secondname {
+    color: rgb(155, 110, 202);
+    font-style: normal;
+  }
+
+  .customTag {
+    color: rgb(216, 84, 103)
+  }
+
+/* CURSOR */
+
+#cursor{
+  font-family: Helvetica;
+  /* animation: cursorani 1s infinite; */
+  font-size: 90px;
+  position: relative;
+  bottom: -11px;
+  left: -4px;
+  font-weight: lighter;
+}
