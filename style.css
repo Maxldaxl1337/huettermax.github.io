@@ -1,168 +1,195 @@
-@import url(./Assets/codingfonts.css);
+@import url("./Assets/codingfonts.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 body {
-    background-color: rgb(17, 20, 24);
-    color: rgb(211, 216, 216);
-    font-family: 'Nanum Gothic Coding';
+  background-color: rgb(17, 20, 24);
+  color: rgb(211, 216, 216);
+  font-family: 'Nanum Gothic Coding';
 }
 
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
 
-  
-  .main {
-    max-width: 1300px;
-    margin: auto;
-  }
 
-  .name:hover {
-    color: rgb(64, 67, 90);
-  }
-  
-  .row {
-    margin: 8px -16px;
-  }
-  
-  .row,
-  .row > .column {
-    padding: 8px;
-  }
-  
+.main {
+  width: 100vw;
+  margin: 32px;
+}
+
+
+.name:hover {
+  color: rgb(64, 67, 90);
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+.row,
+.row>.column {
+  padding: 8px;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.wfodelivery {
+  background-color: white;
+  padding: 10px;
+  transition: 0.3s;
+  /*transition: transform 0.4s;*/
+}
+
+.content {
+  background-color: white;
+  padding: 10px;
+  transition: 0.3s;
+  transition: transform 0.2s;
+}
+
+.content:hover {
+  background-color: rgb(64, 67, 90);
+  color: white;
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 900px) {
   .column {
-    float: left;
-    width: 25%;
-  }    
+    width: 50%;
+  }
+}
 
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
   }
-  
-  .wfodelivery {
-    background-color: white;
-    padding: 10px;
-    transition: 0.3s;
-    /*transition: transform 0.4s;*/
-  }
+}
 
-  .content {
-    background-color: white;
-    padding: 10px;
-    transition: 0.3s;
-    transition: transform 0.2s;
-  }
+/*
+.insta {
+  background-color: #ddd;
+  border: none; 
+  background-color: #3476da;
+  color: black;
+  border-color: #da8c34;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  padding: 12px 28px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  text-decoration: none;
+  transition: border 0.3s ease;
+}
 
-  .content:hover {
-    background-color: rgb(64, 67, 90);
-    color: white;
-    transform: scale(1.2);
-  }
+.insta:hover {
+  background-color: #da8c34;
+  color: white;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: border 0.3s ease;
+}
 
-  @media screen and (max-width: 900px) {
-    .column {
-      width: 50%;
-    }
-  }
-  
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-    }
-  }
+.github {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
 
-  .insta {
-    background-color: #ddd;
-    border: none;
-    color: black;
-    padding: 16px 32px;
-    text-align: center;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition: 0.3s;
-  }
-  
-  .insta:hover {
-    background-color: #da8c34;
-    color: white;
-    cursor: pointer;
-  }
+.github:hover {
+  background-color: #8234da;
+  color: white;
+  cursor: pointer;
+  animation: githubbutton 3s infinite ease;
+}
 
-  .github {
-    background-color: #ddd;
-    border: none;
-    color: black;
-    padding: 16px 32px;
-    text-align: center;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition: 0.3s;
-  }
-  
-  .github:hover {
+@keyframes githubbutton {
+  0% {
     background-color: #8234da;
-    color: white;
-    cursor: pointer;
   }
 
-  .wfod {
-    background-color: #ddd;
-    border: none;
-    color: black;
-    padding: 16px 32px;
-    text-align: center;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition: 0.3s;
-  }
-  
-  .wfod:hover {
-    background-color: #3476da;
-    color: white;
+  50% {
+    background-color: #a050fb;
   }
 
-  .wfod2 {
-    text-align: left;
-    transition: 0.3s;
-    display: inline-block;
+  100% {
+    background-color: #8234da;
   }
+}
 
-  .wfod2:hover {
-    color: #3476da; 
-  }
+.wfod {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
 
-  
-  /* TITLE NAME */
+.wfod:hover {
+  background-color: #3476da;
+  color: white;
+}
 
-  #title {
-    font-size: 70px;
-  }
+.wfod2 {
+  text-align: left;
+  transition: 0.3s;
+  display: inline-block;
+}
 
-  .box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 75vh;
-  }
+.wfod2:hover {
+  color: #3476da;
+}
 
-  #firstname {
-    color: rgb(38, 154, 153);
-    font-style: normal;
-  }
+*/
 
-  #secondname {
-    color: rgb(155, 110, 202);
-    font-style: normal;
-  }
+/* TITLE NAME */
 
-  .customTag {
-    color: rgb(216, 84, 103)
-  }
+#title {
+  font-size: 70px;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+}
+
+#firstname {
+  color: rgb(38, 154, 153);
+  font-style: normal;
+}
+
+#secondname {
+  color: rgb(155, 110, 202);
+  font-style: normal;
+}
+
+.customTag {
+  color: rgb(216, 84, 103)
+}
 
 /* CURSOR */
 
-#cursor{
+#cursor {
   font-family: Helvetica;
   /* animation: cursorani 1s infinite; */
   font-size: 90px;
@@ -170,4 +197,75 @@ body {
   bottom: -11px;
   left: -4px;
   font-weight: lighter;
+}
+
+/* BUTTONS TOP*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body, .flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+body {
+	height: 90vh;
+	background-color: color rgb(64, 67, 90);
+}
+
+.social-links {
+	display: flex;
+  flex-direction: row-reverse;
+}
+
+.social-btn {
+	cursor: pointer;
+	height: 50px;
+	width: 50px;
+	font-family: 'Titillium Web', sans-serif;
+	color: rgb(255, 255, 255);
+	border-radius: 10px;
+	box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+	background: #2f334f;
+	margin: 6px;
+	transition: 1s;
+  
+}
+
+.social-btn svg {
+  height: 28px;
+}
+
+.social-btn span {
+	width: 0px;
+	overflow: hidden;
+	transition: 1s;
+	text-align: center;
+}
+
+.social-btn:hover {
+	width: 150px;
+	border-radius: 5px;
+}
+
+.social-btn:hover span {
+	padding: 2px;
+	width: max-content;
+}
+
+#instagram svg {
+	fill: #ffffff;
+}
+
+#linkedin svg {
+	fill: #fff;
+}
+
+#github svg {
+	fill: #fff;
 }
