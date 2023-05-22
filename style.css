@@ -2,21 +2,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 body {
-  background-color: rgb(17, 20, 24);
+  background-color: rgb(17, 20, 24) !important;
   color: rgb(211, 216, 216);
-  font-family: 'Nanum Gothic Coding';
+	font-family: "Lexend Deca";
 }
 
-* {
-  box-sizing: border-box;
+h1, h2, h3 {
+  color: white;
 }
-
 
 .main {
   width: 100vw;
   margin: 32px;
 }
-
 
 .name:hover {
   color: rgb(64, 67, 90);
@@ -74,96 +72,13 @@ body {
   }
 }
 
-/*
-.insta {
-  background-color: #ddd;
-  border: none; 
-  background-color: #3476da;
-  color: black;
-  border-color: #da8c34;
-  border-radius: 10px;
-  border: 2px solid transparent;
-  padding: 12px 28px;
-  text-align: center;
-  font-size: 16px;
-  margin: 4px 2px;
-  text-decoration: none;
-  transition: border 0.3s ease;
-}
-
-.insta:hover {
-  background-color: #da8c34;
-  color: white;
-  cursor: pointer;
-  border: 2px solid transparent;
-  border-radius: 10px;
-  transition: border 0.3s ease;
-}
-
-.github {
-  background-color: #ddd;
-  border: none;
-  color: black;
-  padding: 16px 32px;
-  text-align: center;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition: 0.3s;
-}
-
-.github:hover {
-  background-color: #8234da;
-  color: white;
-  cursor: pointer;
-  animation: githubbutton 3s infinite ease;
-}
-
-@keyframes githubbutton {
-  0% {
-    background-color: #8234da;
-  }
-
-  50% {
-    background-color: #a050fb;
-  }
-
-  100% {
-    background-color: #8234da;
-  }
-}
-
-.wfod {
-  background-color: #ddd;
-  border: none;
-  color: black;
-  padding: 16px 32px;
-  text-align: center;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition: 0.3s;
-}
-
-.wfod:hover {
-  background-color: #3476da;
-  color: white;
-}
-
-.wfod2 {
-  text-align: left;
-  transition: 0.3s;
-  display: inline-block;
-}
-
-.wfod2:hover {
-  color: #3476da;
-}
-
-*/
-
 /* TITLE NAME */
 
 #title {
   font-size: 70px;
+  font-family: 'Nanum Gothic Coding' !important;
+  color: white;
+  pointer-events: none;
 }
 
 .box {
@@ -201,21 +116,10 @@ body {
 
 /* BUTTONS TOP*/
 
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
 body, .flex-center {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-
-body {
-	height: 90vh;
-	background-color: color rgb(64, 67, 90);
 }
 
 .social-links {
@@ -234,7 +138,6 @@ body {
 	background: #2f334f;
 	margin: 6px;
 	transition: 1s;
-  
 }
 
 .social-btn svg {
@@ -269,6 +172,10 @@ body {
 #github svg {
 	fill: #fff;
 }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
 
 /* SCROLLDOWN ICON */
 html body [data-ca3_iconfont="ETmodules"]::before {
@@ -322,4 +229,12 @@ animation:         ca3_fade_move_down 2s ease-in-out infinite;
 0%   { transform:translate(0,-20px); opacity: 0;  }
 50%  { opacity: 1;  }
 100% { transform:translate(0,20px); opacity: 0; }
+}
+
+#content {
+  margin: 0% 0% 400px 0%;
+}
+.projects {
+  color: #FFF;
+  top: 50%;
 }
