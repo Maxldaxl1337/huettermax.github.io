@@ -1,4 +1,5 @@
 
+ // SOCIAL MEDIA LINKS
  document.getElementById("github").style.cursor = "pointer";
  github.addEventListener("click", (e) => {
      window.open("https://github.com/Maxldaxl1337");
@@ -14,18 +15,7 @@ linkedin.addEventListener("click", (e) => {
      window.open("https://www.linkedin.com/in/maximilian-h%C3%BCtter-61a016262/");
 }) 
 
-// document.getElementById("wfod2").style.cursor = "pointer";
-// wfod2.addEventListener("click", (e) => {
-//     window.open("https://wfo-delivery.vercel.app/");
-// }) 
-
-// document.getElementById("box").style.cursor = "pointer";
-// document.getElementById("box1").style.cursor = "pointer";
-// document.getElementById("box2").style.cursor = "pointer";
-// document.getElementById("box3").style.cursor = "pointer";
-
 //BLINKY BLINKY//
-
 let visibleCursor = false
 setInterval(() => {
     if (visibleCursor){
